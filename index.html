@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+    <h1 id="H">Yard into Square Feet</h1>
+
+    <form onsubmit="doSum(event)">
+    
+    <h1>Yard</h1>  <input id="First" type="number">
+    <br>
+    <button>Convert</button>
+
+    <h1 id="Result"></h1>
+
+    </form>
+
+
+            
+    <script>
+        function doSum(event) {
+        
+        event.preventDefault ();
+
+        let Yard = document.querySelector ("#First").value;
+        
+
+        console.log(Yard);
+       
+
+        let Result = (Yard * 9)
+
+        let messege = `${Result} Square Feet`
+
+        document.querySelector("#Result").innerHTML = messege
+
+        }
+
+    </script>
+
+    </body>
+</html>
